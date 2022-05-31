@@ -1,0 +1,106 @@
+input[type='checkbox']{
+    opacity: 1;
+}
+input[type='checkbox'] + label{
+    position: relative;
+    padding-left: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+    color: gray;
+    line-height: 25px;
+    
+}
+
+input[type='checkbox'] + label::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    outline: 2px solid rgb(69, 69, 70);
+    background-color: white;
+}
+input[type='checkbox']:checked + label::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    outline: none;
+    background-color: white;
+}
+input[type='checkbox']:checked + label::after{
+   content: '';
+   background-image: url('/checkbox/images/check.svg');
+   background-size: contain;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 18px;
+   height: 18px;
+   border-radius: 2px;
+   opacity: 1;
+   animation: popout 1s ease;
+   animation-delay: 0.2s;
+   -webkit-animation: popout 1s ease;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   -ms-border-radius: 2px;
+   -o-border-radius: 2px;
+
+}
+input[type='checkbox']:not(:checked) + label::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    transform: scale(0);
+    background-color: blue;
+    opacity: 0;
+    transition: all 1s ease;
+    transition-delay: 0.2s;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+.first {
+    opacity: 0;
+    }
+    .second {
+    opacity: 1;
+    }
+    .popout {
+        animation: popout 1s ease;
+        -webkit-animation: popout 1s ease;
+    }
+    @keyframes popout {
+        from{transform:scale(0)}
+        80%{transform:scale(1.2)}
+        to{transform:scale(1)}
+    }
+    @-webkit-keyframes popout {
+        from{-webkit-transform:scale(0)}
+        80%{-webkit-transform:scale(1.2)}
+        to{-webkit-transform:scale(1)}
+    }

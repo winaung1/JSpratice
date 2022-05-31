@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/loginPage/login.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="text-white flex gap-10 justify-center mt-40 w-96 ml-auto mr-auto">
+        <div class="relative">
+            <div class="flex gap-x-5">
+                <div class="not-active line firstLine w-[200px]  h-1"></div>
+                <div class="not-active line secondLine w-[200px]  h-1"></div>
+            </div>
+            <div class="a not-active absolute h-7 w-7 text-center rounded-md -top-3 left-0">1</div>
+            <div class="b not-active absolute h-7 w-7 text-center rounded-md -top-3 left-[47%]">2</div>
+            <div class="c not-active absolute h-7 w-7 text-center rounded-md -top-3 right-0">3</div>
+            <div class="text-sm">
+                <p class="absolute top-5 -left-12">ACCOUNT SETUP</p>
+                <p class="absolute top-5 left-[35%]">SOCIAL PROFILES</p>
+                <p class="absolute top-5 -right-12">PERSONAL DETAILS</p>
+            </div>
+        </div>
+    </div>
+    <form class=" flex justify-center items-center pt-32">
+        <div class="display1 contain flex items-center  justify-center w-96 h-[390px] bg-zinc-300 rounded-md">
+            <div class="w-full pt-10 text-center h-full">
+                <h1 class="text-2xl ">CREATE YOUR ACCOUNT</h1>
+                <p class="pb-5">This is step 1</p>
+                <input class="w-80 p-4 bg-transparent border-[1px] border-gray-400 rounded-md mb-2" type="email" placeholder="Email"><br>
+                <input class="w-80 p-4 bg-transparent border-[1px] border-gray-400 rounded-md mb-2" type="password" placeholder="Password"><br>
+                <input class="w-80 p-4 bg-transparent border-[1px] border-gray-400 rounded-md mb-2" type="password" placeholder="Confirm Password"><br>
+                <button class="bg-green-600 text-white font-bold py-2 px-8 rounded-md my-3 ">Next</button>
+            </div>
+        </div>
+    
+        <div class="display2 hidden contain flex items-center  justify-center w-96 h-[390px] bg-zinc-300 rounded-md">
+            <div class="w-full pt-10 text-center h-full">
+                <h1 class="text-2xl ">SOCIAL PROFILES</h1>
+                <p class="pb-5">This is step 2</p>
+                <input class="w-80 p-4 bg-transparent border-[1px] border-gray-400 rounded-md mb-2" type="email" placeholder="Email"><br>
+                <input class="w-80 p-4 bg-transparent border-[1px] border-gray-400 rounded-md mb-2" type="password" placeholder="Password"><br>
+                <input class="w-80 p-4 bg-transparent border-[1px] border-gray-400 rounded-md mb-2" type="password" placeholder="Confirm Password"><br>
+                <button class="button2 bg-green-600 text-white font-bold py-2 px-8 rounded-md my-3 ">Next</button>
+            </div>
+        </div>
+    
+        <div class="display3 hidden contain flex items-center  justify-center w-96 h-[390px] bg-zinc-300 rounded-md">
+            <div class="w-full pt-10 text-center h-full">
+                <h1 class="text-2xl ">PERSONAL DETAILS</h1>
+                <p class="pb-5">This is step 3</p>
+                <input class="w-80 p-4 bg-transparent border-[1px] border-gray-400 rounded-md mb-2" type="email" placeholder="Email"><br>
+                <input class="w-80 p-4 bg-transparent border-[1px] border-gray-400 rounded-md mb-2" type="password" placeholder="Password"><br>
+                <input class="w-80 p-4 bg-transparent border-[1px] border-gray-400 rounded-md mb-2" type="password" placeholder="Confirm Password"><br>
+                <button class="button3 bg-green-600 text-white font-bold py-2 px-8 rounded-md my-3 " type="submit">Submit</button>
+            </div>
+        </div>
+    
+    </form>
+    <script src="/loginPage/login.js"></script>
+</body>
+</html>

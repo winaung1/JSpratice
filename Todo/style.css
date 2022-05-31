@@ -1,0 +1,9 @@
+.styless{
+    display: flex;
+    gap: 10px;
+    background-color: blue;
+}
+
+.linethrough{
+    text-decoration: line-through;
+}
